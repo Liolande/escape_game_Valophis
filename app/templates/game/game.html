@@ -15,7 +15,7 @@
 		<script src="{% static 'webgl/TemplateData/UnityProgress.js' %}"></script>
 		<script src="{% static 'webgl/Build/UnityLoader.js' %}"></script>	
 		<script>
-			var unityInstance = UnityLoader.instantiate("unityContainer", "{% static 'webgl/Build/Package WebGL.json' %}", {onProgress: UnityProgress});
+			var unityInstance = UnityLoader.instantiate("unityContainer", "{% static 'webgl/Build/WebGL.json' %}", {onProgress: UnityProgress});
 		</script>	
 	  {% endif %}
 	</head>
@@ -111,7 +111,7 @@
   
 				{% elif game.status == "INGAME" %}
 					<div class="webgl-content">
-						<div id="unityContainer" style="width: 960px; height: 600px; padding-top:30%;"></div>
+						<div id="unityContainer" style="width: 720px; height: 450px; padding-top:30%;"></div>
 						<div class="footer">
 						<div class="webgl-logo"></div>
 						<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)">

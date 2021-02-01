@@ -60,4 +60,9 @@ docker-compose exec app python manage.py collectstatic —noinput
 Ouvrir la console web du navigateur : 
 post_progression(80);
 
+## Vidéos :
+Modifier les vidéos : 
+Dans le dossier /app/static/videos/
 
+Accéder aux vidéos :
+http://IP_DU_SERVEUR/static/videos/montage1e.mp4
